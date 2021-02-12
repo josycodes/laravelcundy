@@ -15,7 +15,7 @@ class ContactController extends Controller
     }
 
 
-    function SubmitContactUs(Request $req){
+    public function SubmitContactUs(Request $req){
     
         if ((!empty($req->name))&&(!empty($req->email))&&(!empty($req->message))) {
         $blog = Blog::first();
